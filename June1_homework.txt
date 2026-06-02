@@ -1,0 +1,309 @@
+# 1. Student Marks Sorting (Bubble Sort)
+arr = [75, 90, 65, 85, 70]
+
+n = len(arr)
+
+for i in range(n):
+    for j in range(n-i-1):
+        if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+
+print(arr)
+
+
+# 2. Product Price Sorting (Bubble Sort)
+arr = [1200, 500, 2500, 800]
+
+n = len(arr)
+
+for i in range(n):
+    for j in range(n-i-1):
+        if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+
+print(arr)
+
+
+# 3. Student Ranking (Selection Sort)
+arr = [88, 72, 95, 60, 81]
+
+for i in range(len(arr)):
+    min_index = i
+
+    for j in range(i+1, len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
+
+
+# 4. Book ID Sorting (Selection Sort)
+arr = [104, 101, 109, 102]
+
+for i in range(len(arr)):
+    min_index = i
+
+    for j in range(i+1, len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
+
+
+# 5. Employee Age Sorting (Selection Sort)
+arr = [35, 28, 42, 25, 31]
+
+for i in range(len(arr)):
+    min_index = i
+
+    for j in range(i+1, len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
+
+
+# 6. Card Sorting (Insertion Sort)
+arr = [7, 3, 9, 1, 5]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 7. Entered Marks Sorting (Insertion Sort)
+arr = [60, 50, 70, 40]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 8. Contact Number Sorting (Insertion Sort)
+arr = [9876, 4567, 1234, 7890]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 9. Student Record Sorting
+arr = [55, 12, 89, 34, 23, 78]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 10. Customer Account Sorting
+arr = [5678, 1234, 8901, 3456]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 11. Product Search Result Sorting
+arr = [1000, 200, 1500, 500, 800]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 12. Cricket Score Sorting
+arr = [45, 78, 23, 90, 67]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 13. Employee Salary Sorting
+arr = [45000, 30000, 60000, 25000]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 14. Railway Ticket Sorting
+arr = [567, 123, 789, 345]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 15. Patient ID Sorting
+arr = [205, 101, 309, 150]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 16. Roll Number Sorting
+arr = [25, 12, 30, 18]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 17. Nearly Sorted Data
+arr = [10, 20, 30, 25, 40]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 18. Customer ID Merge
+arr = [38, 27, 43, 3, 9, 82, 10]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 19. Sports Score Sorting
+arr = [120, 95, 150, 80, 110]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
+
+
+# 20. Large Dataset Sorting
+arr = [99, 12, 45, 67, 23, 89, 34]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j+1] = arr[j]
+        j -= 1
+
+    arr[j+1] = key
+
+print(arr)
