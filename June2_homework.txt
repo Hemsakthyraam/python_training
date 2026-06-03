@@ -1,0 +1,68 @@
+1. Reverse a String Without Slicing
+
+s = input("Enter a string: ")
+rev = ""
+for ch in s:
+    rev = ch + rev
+print("Reversed String:", rev)
+
+
+2. Check Palindrome Without Using Reverse
+s = input("Enter a string: ")
+pal = True
+i = 0
+j = len(s) - 1
+while i < j:
+    if s[i] != s[j]:
+        pal = False
+        break
+    i += 1
+    j -= 1
+if pal:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+3. Count Vowels and Consonants
+
+s = input("Enter a string: ")
+vowels = 0
+consonants = 0
+for ch in s.lower():
+    if ch.isalpha():
+        if ch in "aeiou":
+            vowels += 1
+        else:
+            consonants += 1
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+
+
+4. Find Duplicate Characters
+s = input("Enter a string: ")
+print("Duplicate Characters:")
+for i in range(len(s)):
+    count = 0
+    for j in range(len(s)):
+        if s[i] == s[j]:
+            count += 1
+    if count > 1:
+        duplicate = False
+        for k in range(i):
+            if s[i] == s[k]:
+                duplicate = True
+                break
+        if not duplicate:
+            print(s[i])
+
+
+5. Remove Special Characters
+
+s = input("Enter a string: ")
+result = ""
+for ch in s:
+    if ch.isalnum() or ch == " ":
+        result += ch
+print("String after removing special characters:")
+print(result)
