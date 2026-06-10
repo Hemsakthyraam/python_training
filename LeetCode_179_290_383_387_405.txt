@@ -1,0 +1,82 @@
+# 179. Largest Number
+
+nums = [10, 2]
+
+nums = list(map(str, nums))
+
+for i in range(len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] + nums[j] < nums[j] + nums[i]:
+            nums[i], nums[j] = nums[j], nums[i]
+
+print("".join(nums))
+
+
+# 290. Word Pattern
+
+pattern = "abba"
+s = "dog cat cat dog"
+
+words = s.split()
+
+if len(pattern) != len(words):
+    print(False)
+else:
+    d = {}
+
+    valid = True
+
+    for i in range(len(pattern)):
+        if pattern[i] in d:
+            if d[pattern[i]] != words[i]:
+                valid = False
+        else:
+            d[pattern[i]] = words[i]
+
+    if len(set(d.values())) != len(d.values()):
+        valid = False
+
+    print(valid)
+
+
+# 383. Ransom Note
+
+ransomNote = "aa"
+magazine = "aab"
+
+flag = True
+
+for ch in ransomNote:
+    if ransomNote.count(ch) > magazine.count(ch):
+        flag = False
+
+print(flag)
+
+
+# 387. First Unique Character in a String
+
+s = "leetcode"
+
+index = -1
+
+for i in range(len(s)):
+    if s.count(s[i]) == 1:
+        index = i
+        break
+
+print(index)
+
+
+# 405. Convert a Number to Hexadecimal
+
+num = 26
+
+hex_chars = "0123456789abcdef"
+
+result = ""
+
+while num > 0:
+    result = hex_chars[num % 16] + result
+    num = num // 16
+
+print(result)

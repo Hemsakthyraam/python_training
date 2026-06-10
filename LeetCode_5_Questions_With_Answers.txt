@@ -1,0 +1,65 @@
+# 88. Merge Sorted Array
+
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+
+nums2 = [2, 5, 6]
+n = 3
+
+nums1[m:] = nums2
+
+nums1.sort()
+
+print(nums1)
+
+
+# 169. Majority Element
+
+nums = [2, 2, 1, 1, 1, 2, 2]
+
+count = {}
+
+for num in nums:
+    count[num] = count.get(num, 0) + 1
+
+for key in count:
+    if count[key] > len(nums) // 2:
+        print(key)
+
+
+# 217. Contains Duplicate
+
+nums = [1, 2, 3, 1]
+
+duplicate = False
+
+for i in range(len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] == nums[j]:
+            duplicate = True
+
+print(duplicate)
+
+
+# 242. Valid Anagram
+
+s = "anagram"
+t = "nagaram"
+
+if sorted(s) == sorted(t):
+    print(True)
+else:
+    print(False)
+
+
+# 268. Missing Number
+
+nums = [3, 0, 1]
+
+n = len(nums)
+
+total = n * (n + 1) // 2
+
+missing = total - sum(nums)
+
+print(missing)
